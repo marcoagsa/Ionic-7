@@ -1,0 +1,18 @@
+Ion-header {
+  Ion-title {
+    color: var(--ion-color-primary);
+    text-align: center;
+  }
+}
+
+Ion-content {
+  Ion-row {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  Ion-text {
+    color: var(--ion-color-danger);
+  }
+}
