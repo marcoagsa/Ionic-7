@@ -1,23 +1,5 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> {{ projectTitle }}</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header />
 
-<ion-content [fullscreen]="true">
-  <ion-row [formGroup]="myForm">
-    <ion-checkbox justify="start" formControlName="myCheckbox"
-      >Checkbox <ion-text> with </ion-text> formControlName and disabled
-    </ion-checkbox>
-  </ion-row>
+<ion-content>
 
-  <ion-row>
-    <ion-checkbox justify="start" [disabled]="disabled"
-      >Checkbox <ion-text> without</ion-text> formControlName and disabled
-    </ion-checkbox>
-  </ion-row>
-
-  <ion-row>
-    <ion-button (click)="toggleDisable()"> toggle disable </ion-button>
-  </ion-row>
 </ion-content>

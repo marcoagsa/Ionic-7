@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from '../components/header/header.component';
 
 @NgModule({
   imports: [
@@ -13,7 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    ReactiveFormsModule,
+    HeaderComponent,
   ],
   declarations: [HomePage],
 })
