@@ -15,7 +15,7 @@ import IonicInfo from '@ionic/angular/package.json';
   styles: ``,
 })
 export class HeaderComponent implements OnInit {
-  name: string = `Ionic ${IonicInfo.version} and Angular ${VERSION.major}`;
+  name: string = `Ionic ${IonicInfo.version} and Angular ${VERSION.full}`;
   constructor() {}
 
   ngOnInit(): void {
