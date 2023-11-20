@@ -10,49 +10,47 @@ import { IonicModule } from '@ionic/angular';
         <ion-card-title class="title">Project Information</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p>
+        <ion-text>
           This project aims to provide an environment for testing Ionic with
           Angular on the web.
-        </p>
-        <p>Minimum Requirements:</p>
+        </ion-text>
+        <ion-text color="primary">Minimum Requirements:</ion-text>
         <ul>
           <li>Ionic minimal version 7</li>
           <li>Angular version 16</li>
         </ul>
-        <p>
+        <ion-text>
           Please make sure you have the required versions installed to utilize
           this environment effectively.
-        </p>
-        <p class="danger">
-          On the top of the header you have the current Ionic and angular
+        </ion-text>
+        <ion-text color="danger">
+          -- On the top of the header you have the current Ionic and angular
           versions
-        </p>
+        </ion-text>
       </ion-card-content>
     </ion-card>
   `,
   standalone: true,
   styles: `
-  ion-card {
-  margin: 20px; /* Add margin for spacing */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    ion-card {
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-  ion-card-content {
-    padding: 16px; /* Add padding inside the card content */
-  }
+    ion-card-content {
+        padding: 16px;
+    }
 
-  ul {
-    list-style-type: disc; /* Use bullets for list items */
-    padding-left: 20px; /* Indent the list */
-  }
-  p {
-    padding-top: 10px;
-  }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
 
-  .danger {
-    color: var(--ion-color-danger);
-  }
-}
+    ion-text {
+      padding-top: 10px;
+      display:block;
+    }
   `,
 })
 export class InfoCardComponent {
