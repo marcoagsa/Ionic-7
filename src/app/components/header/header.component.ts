@@ -1,5 +1,7 @@
-import { Component, VERSION } from '@angular/core';
+import { Component, OnInit, VERSION } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+
+import IonicInfo from '@ionic/angular/package.json';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +14,11 @@ import { IonicModule } from '@ionic/angular';
   standalone: true,
   styles: ``,
 })
-export class HeaderComponent {
-  name: string = `Ionic 7 and Angular ${VERSION.major}`;
+export class HeaderComponent implements OnInit {
+  name: string = `Ionic ${IonicInfo.version} and Angular ${VERSION.major}`;
   constructor() {}
+
+  ngOnInit(): void {
+    console.log('ionicAngularPackage', IonicInfo.version);
+  }
 }
